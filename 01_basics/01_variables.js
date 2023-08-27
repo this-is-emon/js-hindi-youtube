@@ -1,3 +1,6 @@
+// Link : https://www.youtube.com/watch?v=yY0bKZNYmJs&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=4
+// Topic : Let, const and var ki kahani
+
 const accountId = 144553
 let accountEmail = "emon@gmail.com"
 var accountPassword = "12345"

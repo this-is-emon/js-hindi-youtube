@@ -1,3 +1,6 @@
+// Link : https://www.youtube.com/watch?v=suMvZWjjKbo&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=9
+// Topic : Data types of javascript summary
+
 //Primitive
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
@@ -43,7 +46,12 @@ const myFunction = function(){
     JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
 */
 
+
+
 /***************  Memory: Heap vs Stack  *****************/
+// Link : https://www.youtube.com/watch?v=7gwc-1czolw&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=10
+// Topic : Stack and Heap memory in javascript
+
 // See the "heap_stack.png" file to understand the code below
 
 //Stack(Primitive Type), 

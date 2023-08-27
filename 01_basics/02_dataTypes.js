@@ -1,3 +1,6 @@
+// Link : https://www.youtube.com/watch?v=-9knnv97wSc&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=5
+// Topic : Datatypes and ECMA standards
+
 "use strict"; // treat all JS code as newer version
 
 //alert(3+3) // We are using node.js, not browser

@@ -1,3 +1,6 @@
+// Link : https://www.youtube.com/watch?v=tGLCuoumaGY&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=13
+// Topic : Date and time in depth
+
 //Dates
 
 // initiating a new date object instance
@@ -35,6 +38,8 @@ let myDate = new Date()
 // console.log(newDate) //2023-08-25T09:58:12.567Z
 // console.log(newDate.getMonth() + 1) //8 => "+1" because month count start from 0 value
 // console.log(newDate.getDate()) //25
+
+// `{newDate.getDay()} and the time`
 
 let newDate = new Date()
 newDate.toLocaleDateString('default',{

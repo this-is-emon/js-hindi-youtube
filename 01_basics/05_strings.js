@@ -1,3 +1,6 @@
+// Link : https://www.youtube.com/watch?v=fozwNnFunlo&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=11
+// Topic : Strings in Javascript
+
 const name = "Emon"
 const repoCount = 50
 

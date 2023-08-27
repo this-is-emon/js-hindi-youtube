@@ -1,3 +1,9 @@
+// Link : https://www.youtube.com/watch?v=X7hDBhd_L5U&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=6 
+// Topic : Datatype conversion confusion
+
+// Link : https://www.youtube.com/watch?v=N9el4APFtAo&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=7
+// Topic : Why string to number conversion is confusing
+
 let score = "33abc"
 
 //console.log(typeof score) //string
@@ -5,8 +11,8 @@ let score = "33abc"
 
 let valueInNumber = Number(score)
 
-//console.log(typeof valueInNumber) //number
-//console.log(valueInNumber) //NaN
+// console.log(typeof valueInNumber) //number
+// console.log(valueInNumber) //NaN
 
 /* Number conversion "Before" => "After" */
 // "33" => 33
@@ -27,8 +33,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-// console.log(stringNumber)
-// console.log(typeof stringNumber)
+// console.log(stringNumber) //33
+// console.log(typeof stringNumber) //string
 
 
 //************************** Operations *************************
@@ -51,7 +57,7 @@ let str2 = "Emon"
 let str3 = str1 + str2
 //console.log(str3)
 
-// console.log("1" + 2) //12
+// console.log("1" + 2) //12 
 // console.log(1 + "2") //12
 // console.log("1" + 2 + 2) //122
 // console.log(1 + 2 + "2") //32
