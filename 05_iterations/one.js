@@ -1,5 +1,7 @@
-// for
+// Link : https://www.youtube.com/watch?v=Y1cpFsXrEgY&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=28
+// Topic : For loop with break and continue in javascript
 
+// for
 for (let i = 0; i <= 10; i++) {
     const element = i;
     if (element == 5) {

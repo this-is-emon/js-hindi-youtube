@@ -1,3 +1,6 @@
+// Link : https://www.youtube.com/watch?v=w3Q55-l47P0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=28
+// Topic : While and do while loop in Javascript
+
 
 let index = 0
 // while (index <= 10) {
