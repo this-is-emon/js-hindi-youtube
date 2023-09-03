@@ -1,7 +1,11 @@
-// Array
+// Link : https://www.youtube.com/watch?v=cejBux2gtEE&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=14&t=387s
+// Topic : Array in Javascript
 
+/***** Array *****/
+// "array literal notation"
 const myArr = [0,1,2,3,4,5,]
 const myHeros = ["shaktiman","maagraj"]
+//"array creation using the Array constructor"
 const myArr2 = new Array(1,2,3,4)
 
 //console.log(myArr[0])
@@ -15,13 +19,13 @@ const myArr2 = new Array(1,2,3,4)
 
 // myArr.unshift(9)
 // console.log(myArr) //[ 9, 0, 1, 2, 4, 5 ]
-// myArr.shift()
+// myArr.shift()  // 'shift()' returns a value like 'pop()'
 // console.log(myArr);  //[ 0, 1, 2, 4, 5 ]
 
 // console.log(myArr.includes(9)); //false
 // console.log(myArr.indexOf(3)); // 3
 
-// const newArr = myArr.join()
+// const newArr = myArr.join() // "0, 1, 2, 4, 5"
 
 // console.log(myArr); //[ 0, 1, 2, 4, 5 ]
 // console.log(typeof myArr); //object
