@@ -1,5 +1,8 @@
-// singleton
-// Object.create
+// Link : https://www.youtube.com/watch?v=vVYOHmqQDCU&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=16
+// Topic : Objects in depth in javascript in hindi
+
+// Object.create => creating object using constructor method
+// singleton => is made when Object created through constructor method
 
 // object literals
 
