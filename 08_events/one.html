@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <!-- ***** 1'st way of using 'onclick' events ***** -->
+            <!-- <li><img width="200px" id="owl" 
+            src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" 
+            alt="" onclick="alert('Owl')"></li> -->
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    /* ***** 2'nd way of using 'onclick' events ***** */
+    // document.getElementById('owl').onclick = function () {
+    //     alert("OWL clicked!")
+    // }
+
+    /* ***** 3'rd way of using 'onclick' events: It gives more features like propagation etc ***** */
+    // document.getElementById('owl').addEventListener('click',function () {
+    //     alert("The OWL image is clicked!!")
+    // },false)
+
+    // attachEvent() --> previously used for listening events 
+    // jQuery - on --> previously used for listening events
+
+    /* ***** Event Object (e)  ***** */
+    //    document.getElementById('owl').addEventListener('click',function (e) {
+    //     console.log(typeof e); // Event Object
+    //     console.log(e); // methods and properties of Event Object
+    //    },false) // The 3rd parameter 'false' is used to determines how the event should be captured or bubbled
+
+    /* ***** Event Object (e) needed to be studied ***** */
+        // type(keybord press, mouse click etc) => https://developer.mozilla.org/en-US/docs/Web/API/Event/type
+        // timestamp (returns the time (in milliseconds) at which the event was created) => https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp
+        // defaultPrevented (returns A boolean value, where true indicates that the default user agent action was prevented, and false indicates that it was not.) => https://developer.mozilla.org/en-US/docs/Web/API/Event/defaultPrevented
+        // target (is a reference to the object onto which the event was dispatched) => https://developer.mozilla.org/en-US/docs/Web/API/Event/target
+        // toElement => use "event.target"
+        // srcElement => use "Event.target"
+        // currentTarget (identifies the current target for the event, as the event traverses the DOM) => https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget
+        // clientX ( provides the horizontal coordinate within the application's viewport at which the event occurred) => https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX
+        // clientY ( provides the vertical coordinate within the application's viewport at which the event occurred) => https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientY
+        // screenX (provides the horizontal coordinate (offset) of the mouse pointer in global (screen) coordinates) => https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/screenX
+        // screenY (provides the vertical coordinate (offset) of the mouse pointer in global (screen) coordinates.) => https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/screenY
+        // altkey (The KeyboardEvent.altKey read-only property is a boolean value that indicates if the alt key (Option or ⌥ on macOS) was pressed (true) or not (false) when the event occurred) => https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/altKey
+        // ctrlkey (The KeyboardEvent.ctrlKey read-only property returns a boolean value that indicates if the control key was pressed (true) or not (false) when the event occurred.) => https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/ctrlKey
+        // shiftkey (The KeyboardEvent.shiftKey read-only property is a boolean value that indicates if the shift key was pressed (true) or not (false) when the event occurred) => https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/shiftKey
+        // keyCode () => https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
+
+/* ***** Understanding Event Propagation(Bubbling or Capturing) ***** */
+
+    // "event bubblling"(Bottom to Top propagation) 
+    /*
+    document.getElementById("images").addEventListener('click',function (e) {
+        console.log("Clicked inside the ul");
+    },false) // Default value of Event propagation is 'false', means event-bubbling enabled
+
+    document.getElementById("owl").addEventListener('click',function (e) {
+        console.log("Cicked the OWl!");
+    },false)
+    */
+    
+    // "event capturing"(Top to Bottom propagation)
+    /*
+    document.getElementById("images").addEventListener('click',function (e) {
+        console.log("Clicked inside the ul");
+    },true) // value of Event propagation is 'ture', means event-capturing
+
+    document.getElementById("owl").addEventListener('click',function (e) {
+        console.log("Cicked the OWl!");
+    },true)
+    */
+
+/* ***** Preventing Event Propagation(Bubbling or Caturing) ***** */
+    // document.getElementById("images").addEventListener('click',function (e) {
+    //     console.log("Clicked inside the ul");
+    // },false) // value of Event propagation is 'ture', means event-capturing
+
+    // document.getElementById("owl").addEventListener('click',function (e) {
+    //     e.stopPropagation()
+    //     console.log("Cicked the OWl!");
+    // },false)
+
+    // preventing bubbling-up and default-propagation
+    // document.getElementById("google").addEventListener('click',function (e) {
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("Google is CLICKED!");
+    // },false)
+
+
+</script>
+</html>
