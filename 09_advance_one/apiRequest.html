@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body style="background-color: #212121;">
-    <table>
+  <body style="background-color: #212121; color: antiquewhite">
+    <table
+      style="
+        border: 1px solid whitesmoke;
+        text-align: left;
+        border-spacing: 15px 5px;
+      "
+    >
       <tr>
         <th>Code</th>
         <th>Code Name</th>
@@ -14,24 +20,52 @@
       </tr>
       <tr>
         <td>0</td>
-        <td></td>
-        <td></td>
+        <td>UNSENT</td>
+        <td>Client has been crated. open() not called yet</td>
       </tr>
       <tr>
         <td>1</td>
-        <td></td>
-        <td></td>
+        <td>OPENED</td>
+        <td>open() has been called</td>
       </tr>
       <tr>
         <td>2</td>
-        <td></td>
-        <td></td>
+        <td>HEADERS_RECEiVED</td>
+        <td>send() has been called, and headers and status are available</td>
       </tr>
       <tr>
         <td>3</td>
-        <td></td>
-        <td></td>
+        <td>LOADING</td>
+        <td>Dwonloading, responseText holds partial data</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>DONE</td>
+        <td>The operation is complete</td>
       </tr>
     </table>
   </body>
+  <script>
+    /*
+    The provided code is an example of making an HTTP GET request to the GitHub API to retrieve information about a specific user ("hiteshchoudhary") using the XMLHttpRequest object. The code sends a GET request to the GitHub API's user endpoint and logs the user's followers to the console once the response is received.
+    */
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+    // Defines the URL for the GitHub API endpoint to fetch information about the user "hiteshchoudhary"
+    const xhr = new XMLHttpRequest();
+    // Creates a new instance of XMLHttpRequest, which is used to send HTTP requests and receive responses.
+    xhr.open("GET", requestUrl);
+    // Specifies the HTTP method (GET) and the request URL for the XMLHttpRequest
+    xhr.onreadystatechange = function () {
+      //Defines an event handler that will be called whenever the readyState property of the XMLHttpRequest changes
+      console.log(xhr.readyState);
+      //Checks if the request is complete (readyState is 4), meaning the response is fully received and available for processing.
+      if (xhr.readyState === 4) {
+        //Parses the response text (in JSON format) into a JavaScript object.
+        const data = JSON.parse(this.responseText);
+        console.log(typeof data);
+        console.log(data.followers);
+      }
+    };
+    xhr.send(); //HTTP request is sent using the XMLHttpRequest object
+  </script>
 </html>
