@@ -17,7 +17,7 @@ const gameName = new String('Hitesh-hc-choudhary')
 // console.log(gameName[0]) //H
 // console.log(gameName.__proto__) //{}
 
-// console.log(gameName.length) //6
+//console.log(gameName.length) //19
 // console.log(gameName.toUpperCase()) //HITESH
 // console.log(gameName.charAt(2)) //t
 // console.log(gameName.indexOf('t')) //2

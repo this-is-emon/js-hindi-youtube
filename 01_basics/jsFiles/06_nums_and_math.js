@@ -10,7 +10,7 @@ const balance = new Number(100)
 //[Number: 100] -- defined the value in a new object of Number type
 
 //practicing different methods of the "Number type Object"
-// console.log(balance.toString().length) //3
+//console.log(balance.toString().length) //3
 //console.log(balance.toFixed(2)) //100.00 => 2 decimal places after doshomic
 
 // Careful!! while using "toPrecision()" method
