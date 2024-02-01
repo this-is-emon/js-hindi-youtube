@@ -45,3 +45,35 @@ let newDate = new Date()
 newDate.toLocaleDateString('default',{
     weekday: "long",
 })
+
+/*-------------------- InterView Q&A --------------------*/
+//Question 1: How can you get the current date and time in JavaScript?
+    const currentDate = new Date()
+    //console.log(currentDate);
+
+//Question 2: Explain the difference between Date.now() and new Date() in JavaScript.
+    const inMiliSecond = Date.now();
+    //console.log(inMiliSecond);
+    const inObject = new Date();
+    //console.log(inObject);
+//Question 3: How do you format a date in JavaScript?
+    const toBeFormatted = new Date()
+    const formattedDate = toBeFormatted.toLocaleDateString("default",{weekday:'long',year:'numeric',month:'long',day:'numeric'})
+    //console.log(formattedDate);
+//Question 4: Explain how to calculate the difference between two dates in JavaScript.
+    const date1 = new Date("2022-01-01")
+    const date2 = new Date()
+    const timeDifference = date2-date1;
+    const dayDifference = Math.floor(timeDifference/(1000*60*60*24))
+    //console.log(dayDifference);
+
+//Question 5: How can you set a specific date in JavaScript?
+    const specificDate = new Date()
+    specificDate.setFullYear(2023)
+    specificDate.setMonth(6)
+    specificDate.setDate(15)
+    console.log(specificDate);
+//Question 6: What is the purpose of the getTime() method in JavaScript's Date object?
+    const today = new Date()
+    const timestamp = today.getTime();
+    //console.log(timestamp);
