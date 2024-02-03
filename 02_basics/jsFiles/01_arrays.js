@@ -1,5 +1,7 @@
 // Link : https://www.youtube.com/watch?v=cejBux2gtEE&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=14&t=387s
 // Topic : Array in Javascript
+// Key topic name : Array literal notation, Arrray Constructor, push(), pop(), unshift(), shift(), includes(),
+// indexOf(), join(), slice(), splice()
 
 /***** Array *****/
 // "array literal notation"

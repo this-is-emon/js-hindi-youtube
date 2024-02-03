@@ -1,5 +1,6 @@
 // Link : https://www.youtube.com/watch?v=m6azhgyCi-k&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=15
 // Topic : Array part 2 in Javascript Hindi
+// Key Topics : concat(), spread, flat(), Array.isArray(), Array.from(), Array.of()
 
 const marvel_heros = ["thor","Ironman","spiderman"]
 const dc_heros = ["thor","Flash","spiderman"]
