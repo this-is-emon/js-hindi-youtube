@@ -84,4 +84,4 @@ const { courseInstructor } = course2;
 /*--De-structuring Array--*/
 let myArray2 = [1, 2, 3];
 
-let [firstValue2, secondValue2, thirdValue2] = myArray;
+let [firstValue2, secondValue2, thirdValue2] = myArray2;
