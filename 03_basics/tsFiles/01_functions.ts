@@ -1,5 +1,5 @@
 // Link1: https://www.youtube.com/watch?v=Bn56WahG_t0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=19
-// Link2:
+// Topics: Function Reference, Function call, Function Parameters, Function Arguments, Guess the output
 
 function sayMyName2(): void {
   console.log("H");
@@ -20,11 +20,13 @@ function sayMyName2(): void {
 //   console.log(number1 + number2);
 // }
 
+// # Here, number1 and number2 are parameters.
 function addTwoNumbers2(number1: number, number2: number): number {
   let result = number1 + number2;
   return result;
   // return number1 + number2;
 }
+// # Here, 3 and 5 are arguments
 const finalResult: number = addTwoNumbers2(3, 5);
 
 // console.log("Result: ", finalResult);

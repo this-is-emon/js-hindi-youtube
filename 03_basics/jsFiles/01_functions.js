@@ -1,5 +1,5 @@
 // Link1: https://www.youtube.com/watch?v=Bn56WahG_t0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=19
-// Link2: 
+// Topics: Function Reference, Function call, Function Parameters, Function Arguments, Guess the output 
 
 function sayMyName(){
     console.log("H");
@@ -22,13 +22,14 @@ function sayMyName(){
 //     console.log(number1 + number2);
 // }
 
+// # Here, number1 and number2 are parameters.
 function addTwoNumbers(number1, number2){
 
     // let result = number1 + number2
     // return result
     return number1 + number2
 }
-
+// # Here, 3 and 5 are arguments
 const result = addTwoNumbers(3, 5)
 
 // console.log("Result: ", result);
@@ -53,6 +54,7 @@ function loginUserMessage(username = "sam"){
 
 /* Functions with objects and array Starts */
 // Link: https://www.youtube.com/watch?v=t7ZHPhgdA4U&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=20
+// Topics : Rest Operator, Passing an Object(directly/indirectly) inside a function, Passing an Array(directly/indirectly) inside a function.
 
 //Normal function
 // function calculateCartPrice(num1){
